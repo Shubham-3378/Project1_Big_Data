@@ -4,7 +4,8 @@ In this project, SCD-1 logic is implemented using shell scripting, hive and Sqoo
 
 ## Pictorial Presentation of Project
 
-![project_pictorial_description](https://user-images.githubusercontent.com/107996057/175648167-3a59fc03-016f-428f-8aca-2b29aacdc936.jpeg)
+![project_pictorial_description](https://user-images.githubusercontent.com/107996057/176883552-8e67dd5c-b489-4676-a2bb-502b43a95731.jpg)
+
 
 # Description
 ### In this project Data is sent by the client everyday in CSV format. So load all the data in SQL everyday and then export it to HDFS. From there load the Data to hive
