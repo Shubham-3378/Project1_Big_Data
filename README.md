@@ -7,16 +7,23 @@ In this project, SCD-1 logic is implemented using shell scripting, hive and Sqoo
 ![project_pictorial_description](https://user-images.githubusercontent.com/107996057/176883552-8e67dd5c-b489-4676-a2bb-502b43a95731.jpg)
 
 
-# Description
-### In this project Data is sent by the client everyday in CSV format. So load all the data in SQL everyday and then export it to HDFS. From there load the Data to hive
-### and do the partioning on Year and Month and implement SCD Type-1 Logic and then load the data for Data reconcilation so that no loss of data takes place at any day.
+## Description
+#### In this project Data is sent by the client everyday in CSV format. So load all the data in SQL everyday and then export it to HDFS. From there load the Data to hive.
+#### Also implemented partioning on Year and Month and then implemented SCD Type-1 Logic and then load the data for Data reconcilation so that no loss of data takes place at any day.
+
+## Technology Stack
+* Hadoop
+* Sqoop
+* Hive
+* Sql
+* Shell Scripting
 
 ## About SCD Type-1 
-### SCD Stands for Slowly changing dimensions.
-### SCD type 1 methodology is used when there is no need to store historical data in the dimension table. 
-### This method overwrites the old data in the dimension table with the new data. It is used to correct data errors in the dimension.
+#### SCD Stands for Slowly changing dimensions.
+#### SCD type 1 methodology is used when there is no need to store historical data in the dimension table. 
+#### This method overwrites the old data in the dimension table with the new data. It is used to correct data errors in the dimension.
 
-# Approach
+## Approach
 1) First I transfer all the datasets to Virtual machine on my system using WinSCP.
 2) After getting Datasets on EdgeNode, put all datasets in a Archive folder as a BackUp purpose.
 3) Then export Day1 data to SQL database in a table(dummy_data), also added one column for comaparing updated timestamp.
